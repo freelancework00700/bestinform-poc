@@ -1,0 +1,30 @@
+<div class="row g-3 search-form">
+  <div *ngFor="let field of searchFormFields; let i = index" [ngClass]="getColumnClass(i)">
+    <div class="position-relative form-group">
+      <div class="form-control">
+        <div class="d-flex align-items-center gap-2">
+          <img
+            [src]="'assets/images/' + field.icon"
+            [alt]="field.alt"
+            class="input-icon"
+            width="30"
+            [height]="field.icon === 'user.png' ? '30' : '26'"
+          />
+          <div *ngIf="!field.readonly" class="form-label-text">{{ field.label }}</div>
+          <div *ngIf="field.readonly" class="form-label-subtext">
+            {{ field.label }}
+            <img src="assets/images/arrow-down.svg" alt="arrow-down" width="10" height="14" />
+          </div>
+        </div>
+        <input type="text" [placeholder]="field.placeholder" [readonly]="field.readonly" [value]="field.value" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Search Button -->
+  <div class="col-lg-1 h-100 col-12">
+    <button class="btn btn-warning btn-lg w-100 d-flex align-items-center justify-content-center search-btn">
+      <img src="assets/images/search.png" alt="Search" class="input-icon" width="40" height="40" />
+    </button>
+  </div>
+</div>
