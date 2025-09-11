@@ -6,7 +6,7 @@
         <div class="d-flex align-items-center logo-container">
           <div class="">
             <div class="d-flex align-items-center justify-content-center">
-              <img src="assets/images/brand-logo.png" alt="brand-logo" class="brand-icon" />
+              <img src="assets/images/brand-logo.svg" alt="brand-logo" class="brand-icon" />
             </div>
           </div>
         </div>
@@ -14,9 +14,11 @@
 
       <!-- EU/Romania Badges -->
       <div class="col-md-4 text-center d-none d-md-block badge-container">
-        <div class="d-flex justify-content-center align-items-center gap-3">
-          <div class="text-center" *ngFor="let badge of badgeImages">
-            <img [src]="'assets/images/' + badge.src" [alt]="badge.alt" class="input-icon" />
+        <div class="d-flex justify-content-center">
+          <div class="border border-white d-flex justify-content-center align-items-center gap-3 py-1 px-2 radius-6">
+            <div class="text-center" *ngFor="let badge of badgeImages">
+              <img [src]="'assets/images/' + badge.src" [alt]="badge.alt" class="input-icon" />
+            </div>
           </div>
         </div>
       </div>
@@ -24,7 +26,7 @@
       <!-- Login Button -->
       <div class="col-md-4 col-4 justify-content-end d-flex">
         <button class="btn btn-outline-light d-flex align-items-center gap-2 login-btn">
-          <img src="assets/images/login-user.png" alt="sub-brand-1" class="login-user-icon" />
+          <img src="assets/images/login-user.svg" alt="sub-brand-1" class="login-user-icon" />
           Login
         </button>
       </div>

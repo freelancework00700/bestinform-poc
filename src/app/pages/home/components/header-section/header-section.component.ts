@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class HeaderSectionComponent {
   badgeImages = [
-    { src: 'sub-brand-1.png', alt: 'sub-brand-1' },
-    { src: 'sub-brand-2.png', alt: 'sub-brand-2' },
-    { src: 'sub-brand-3.png', alt: 'sub-brand-3' }
+    { src: 'sub-brand-1.svg', alt: 'sub-brand-1' },
+    { src: 'sub-brand-2.svg', alt: 'sub-brand-2' },
+    { src: 'sub-brand-3.svg', alt: 'sub-brand-3' }
   ];
 }

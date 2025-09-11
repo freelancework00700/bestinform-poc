@@ -67,7 +67,7 @@ body {
 // Hero section enhancements
 .hero-section {
   position: relative;
-  min-height: 80vh;
+  min-height: 800px;
   background:
     linear-gradient(180deg, #393a53 0%, rgba(57, 58, 83, 0) 50%),
     url('assets/images/hero-bg.png') lightgray 50% / cover no-repeat;
@@ -103,7 +103,7 @@ body {
     width: 100%;
     display: flex;
     position: absolute;
-    bottom: -110px;
+    bottom: -100px;
     z-index: 20;
     @media screen and (max-width: 1024px) {
       align-items: center;
@@ -171,6 +171,7 @@ body {
         border: 1px solid #fff;
         background: linear-gradient(0deg, #4a90e2 0%, #294f7c 100%);
         color: #fff;
+        height: 50px;
         padding: 5px 10px;
         justify-content: center;
         align-items: center;
@@ -188,6 +189,16 @@ body {
         &:hover {
           background-color: #002d6d !important;
           transform: translateY(-1px);
+        }
+        &:nth-child(3) {
+          @media screen and (max-width: 991px) {
+            background: linear-gradient(0deg, #294f7c 0%, #4a90e2 100%);
+          }
+        }
+        &:nth-child(4) {
+          @media screen and (max-width: 991px) {
+            background: linear-gradient(0deg, #294f7c 0%, #4a90e2 100%);
+          }
         }
       }
     }
@@ -322,6 +333,24 @@ body {
     @media screen and (max-width: 1024px) {
       height: 20px !important;
       width: 20px !important;
+    }
+  }
+}
+.custom-btn:nth-child(3) {
+  @media screen and (max-width: 991px) {
+    .tab-btn {
+      &:not(.active) {
+        background: linear-gradient(0deg, #294f7c 0%, #4a90e2 100%);
+      }
+    }
+  }
+}
+.custom-btn:nth-child(4) {
+  @media screen and (max-width: 991px) {
+    .tab-btn {
+      &:not(.active) {
+        background: linear-gradient(0deg, #294f7c 0%, #4a90e2 100%);
+      }
     }
   }
 }

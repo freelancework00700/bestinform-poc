@@ -1,11 +1,11 @@
 <div class="row g-3 mb-3 search-tabs">
-  <div class="col-lg-3 col-6" *ngFor="let tab of searchTabs; let i = index">
+  <div class="col-lg-3 col-6 custom-btn" *ngFor="let tab of searchTabs; let i = index">
     <button
       class="btn px-4 me-2 d-flex align-items-center gap-2 tab-btn w-100"
       [ngClass]="i === selectedTabIndex ? 'btn-warning text-white fw-bold active' : 'btn-outline-primary'"
       (click)="selectTab(i)"
     >
-      <img [src]="'assets/images/' + tab.src" [alt]="tab.alt" width="40" height="40" class="service-btn" />
+      <img [src]="'assets/images/' + tab.src" [alt]="tab.alt" class="responsive-img" />
       {{ tab.label }}
     </button>
   </div>

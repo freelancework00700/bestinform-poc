@@ -8,12 +8,11 @@ import { Component } from '@angular/core';
 export class SearchTabsComponent {
   selectedTabIndex = 0;
   searchTabs = [
-    { src: 'flight.png', label: 'Zboruri', alt: 'Flight' },
-    { src: 'hotel.png', label: 'Hoteluri', alt: 'Hotel' },
-    { src: 'location.png', label: 'Atractii', alt: 'Attractions' },
-    { src: 'vacation.png', label: 'Vacante', alt: 'Vacation' }
+    { src: 'flight.svg', label: 'Zboruri', alt: 'Flight' },
+    { src: 'hotel.svg', label: 'Hoteluri', alt: 'Hotel' },
+    { src: 'location.svg', label: 'Atractii', alt: 'Attractions' },
+    { src: 'vacation.svg', label: 'Vacante', alt: 'Vacation' }
   ];
-
 
   selectTab(index: number): void {
     this.selectedTabIndex = index;
